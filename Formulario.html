@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1> Cadastro de Devs</h1>
+        <p>Complete suas informações</p>
+        <br>
+
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type = "text" name = "nome" id = "nome">
+            </div>
+
+            <div>
+                <label>Sobrenome</label>
+                <input type = "text" name = "sobrenome" id = "sobrenome">
+            </div>
+
+        </fieldset>
+
+        <div>
+            <label>Email</label>
+            <input type = "email" name = "email" id = "email">
+
+        </div>
+
+        <div>
+            <br>
+            <Label>De qual lado da aplicação você desenvolve?</label>
+                <br>
+            <label>
+                <input type= "radio" nome = "devweb" value="frontend" checked> front-end
+            </label>
+            <label>
+                <input type= "radio" nome = "devweb" value="backand"> back-end
+            </label>
+            <label>
+                <input type= "radio" nome = "devweb" value="fullstack"> fullstack
+            </label>
+        </div>
+
+        <div>
+            <br>
+            <label>Senioridade</label>
+            <select id = senioridade>
+                <option selected disable value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+                <br>
+                </select>
+                
+        </div>
+            <br>
+        <fieldset>
+            <div>
+                <label>Selecione as tecnologias que utiliza:</label><br>
+                <input type= "checkbox" id= "tecnologia1" nome="tecnologia1" value= "HTML"> 
+                <label for="tecnologia1">HTML</label>
+                <input type= "checkbox" id= "tecnologia2" nome="tecnologia2" value= "css"> 
+                <label for="tecnologia2">CSS</label>
+                <input type= "checkbox" id= "tecnologia3" nome="tecnologia3" value= "JavaScript"> 
+                <label for="tecnologia3">JavaScript</label>
+                <input type= "checkbox" id= "tecnologia4" nome="tecnologia4" value= "Spring-boot"> 
+                <label for="tecnologia4">Spring-boot</label>
+            </div>
+
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Conte-nos um pouco mais sobre você:</label>
+            <textarea row="6" style="width: 26em" id="experiencia" nome="experiencia"></textarea>
+        </div>
+
+        <button type="submit">Concluído</button>
+
+    </form>
+    </body>
+</html>
